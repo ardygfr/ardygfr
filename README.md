@@ -12,6 +12,7 @@ Self Cashier Python adalah program simulasi toko online yang memungkinkan penggu
 
 ## Flowchart / Tabel Alur
 ![Super Cashier Flow Chart_page-0001](https://github.com/ardygfr/ardygfr/assets/135483133/adb24537-4551-4568-8227-c9ef8a8fabfc)
+### Gambar Tabel Alur Proses Pembelanjaan di Toko Sumber Makmur
 
 ## Deskripsi Task
 1. Module 'init_variable.py' memuat variabel-variabel yang dibutuhkan untuk membuat koneksi ke server dan database di MySQL.
