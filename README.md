@@ -1,4 +1,7 @@
 # Self Automated Cashier Sumber Makmur
+![People Happily 0](https://github.com/ardygfr/ardygfr/assets/135483133/e6cda722-5772-4e3a-ae21-bbcefbe921ab)
+### Ilustrasi Toko Sumber Makmur, Dibuat dengan AI https://gencraft.com
+
 ## Self Cashier Python
 Self Cashier Python adalah program simulasi toko online yang memungkinkan pengguna untuk melakukan pembelian produk dalam berbagai kategori. Program ini juga menghitung total harga belanja dan memberikan potensi diskon. Program ini ditulis dalam bahasa pemrograman Python dan terdiri dari beberapa modul yang bekerja bersama untuk menjalankan fungsionalitasnya.
 
