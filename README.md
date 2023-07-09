@@ -355,7 +355,8 @@ Kembali ke [main.py](./main.py)
    ![Screenshot 2023-07-09 223557](https://github.com/ardygfr/ardygfr/assets/135483133/f04f43c2-1425-433d-8027-9214bda6f92a)
    
    - User Memasukkan Kuantitas non Angka dan Kuantitas Minus
-     ![Screenshot 2023-07-09 223728](https://github.com/ardygfr/ardygfr/assets/135483133/977b0ec7-b771-4e68-a0e7-e4e3019599a0)
+
+   ![Screenshot 2023-07-09 223728](https://github.com/ardygfr/ardygfr/assets/135483133/977b0ec7-b771-4e68-a0e7-e4e3019599a0)
     
 3. Koreksi Pembelian
 
