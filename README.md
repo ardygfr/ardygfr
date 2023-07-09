@@ -383,14 +383,17 @@ Kembali ke [main.py](./main.py)
     
    ![Screenshot 2023-07-09 225440](https://github.com/ardygfr/ardygfr/assets/135483133/a6cbf7af-a435-43d1-9ce7-4f6ec6bbb765)
 
-7. Meampilkan Hasil Pencarian Judul Buku
 
-![Pencarian Judul Buku](https://user-images.githubusercontent.com/109220639/180597323-2f7313e6-e67f-4772-9f4c-2a18248625b6.jpeg)
+## Kesimpulan
+Proyek Self Automated Cashier Sumber Makmur adalah sebuah program self cashier sederhana yang dikembangkan menggunakan bahasa pemrograman Python. Program ini memungkinkan pengguna untuk melakukan pembelian produk dalam berbagai kategori, menghitung total harga belanja, dan memberikan potensi diskon. Dengan menggunakan modul-modul yang ada, pengguna dapat login atau membuat akun baru, memilih item, mengatur jumlah item, dan melihat rincian belanjaan. Program ini merupakan solusi kasir otomatis yang efisien untuk toko online dan dapat dikembangkan lebih lanjut dengan penambahan fitur-fitur tambahan seperti sistem penilaian produk dan integrasi dengan sistem inventaris.
 
 ## Saran Perbaikan
+![Robot Serving h 0](https://github.com/ardygfr/ardygfr/assets/135483133/9bcd0d2c-67e1-450f-b719-b2674182fa29)
+### Ilustrasi AI Melayani Manusia, Dibuat dengan AI https://gencraft.com
 1. Mengembangkan program dengan pendekatan berbasis objek, menggunakan class untuk merepresentasikan entitas seperti pengguna, kategori produk, dan item.
 2. Menambahkan fitur tambahan, seperti sistem penilaian atau ulasan produk, pilihan pembayaran, atau integrasi dengan sistem inventaris.
 3. Melakukan refaktor pada kode untuk meningkatkan kebersihan dan struktur program.
 4. Menggunakan mekanisme penyimpanan data yang lebih baik, seperti database atau file untuk menyimpan informasi pengguna, produk, dan transaksi.
 5. Mengimplementasikan pengujian otomatis (automated testing) untuk memastikan kestabilan dan kehandalan program.
 6. Menerapkan sistem keamanan untuk melindungi data pengguna, seperti enkripsi kata sandi dan validasi input.
+7. Mengintegrasikan AI secara lebih lanjut lagi dalam pendalaman fitur bagi pengguna
