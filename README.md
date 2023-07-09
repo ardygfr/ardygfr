@@ -10,6 +10,9 @@ Self Cashier Python adalah program simulasi toko online yang memungkinkan penggu
 5.  Menggunakan daftar pengguna yang sudah terdaftar sebelumnya untuk login atau membuat akun baru.
 6.  Memberikan penggunaan contoh dan penjelasan pada setiap modul.
 
+## Flowchart / Tabel Alur
+![Super Cashier Flow Chart_page-0001](https://github.com/ardygfr/ardygfr/assets/135483133/adb24537-4551-4568-8227-c9ef8a8fabfc)
+
 ## Deskripsi Task
 1. Module 'init_variable.py' memuat variabel-variabel yang dibutuhkan untuk membuat koneksi ke server dan database di MySQL.
 2. Module 'create_db.py' berfungsi untuk membuat koneksi ke server dan database. Dalam module ini juga terdapat function create_tables() untuk membuat tabel-tabel dalam database dan insert_tables() untuk menambahkan data contoh pada tabel-tabel jika diperlukan.
