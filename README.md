@@ -326,27 +326,39 @@ Modul `existing_users.py` digunakan untuk menyimpan dan mengelola data pengguna 
 Kembali ke [main.py](./main.py)
 
 ## Hasil Test Case
-1. Non Member Tidak Ingin Daftar Account
+1. Registrasi dan Log in
 
-    - Penawaran Bergabung
+    - Non Member Tidak Ingin Buat Akun
 
     ![Screenshot 2023-07-09 213744](https://github.com/ardygfr/ardygfr/assets/135483133/3c3dc482-1a00-4888-a5c4-1e2b544aef34)
 
-    - Menampilkan Ucapan Terimakasih
+    - Member Lupa Username dan Input dengan Email
 
-    ![4 Tampilkan Daftar Anggota](https://user-images.githubusercontent.com/109220639/180597039-0df64db9-625c-44b8-8da7-661a3f932c59.jpg)
+    ![image](https://github.com/ardygfr/ardygfr/assets/135483133/8acdf935-7a0c-45cb-99cb-4e5cdecb6fa4)
+ 
+   - User Baru Salah dalan Input Email dan Username
 
-2. Pendaftaran Buku
+    ![Screenshot 2023-07-09 222854](https://github.com/ardygfr/ardygfr/assets/135483133/2257b7ac-ab82-4112-895f-e0310a24044d)
 
-    - Penambahan Data Buku Baru
+2. Proses Belanja
+
+    - Proses Belanja Pada Umumnya (Sebelum Tahap Koreksi)
     
-    ![2 Pendaftaran Buku Baru](https://user-images.githubusercontent.com/109220639/180597228-5fc20b1d-7ebf-4e59-87bd-0c4b66c94434.jpeg)
+    ![Screenshot 2023-07-09 223216](https://github.com/ardygfr/ardygfr/assets/135483133/515ca371-a734-4966-a025-6fbbc208fe7d)
     
-    - Menampilkan Daftar Buku 
+    - Pelanggan Salah Memilih Nomor Kategori
     
-    ![5 Tampilkan Daftar Buku](https://user-images.githubusercontent.com/109220639/180597232-f9d7f8bb-e7b8-46d4-b91c-fad65f0f1854.jpeg)
+    ![Screenshot 2023-07-09 223418](https://github.com/ardygfr/ardygfr/assets/135483133/31126265-aa10-4de5-8ac4-a1f40df9153b)
     
-3. Peminjaman Buku
+    - Pelanggan Salah Memilih Nomor Item
+    
+    ![Screenshot 2023-07-09 223418](https://github.com/ardygfr/ardygfr/assets/135483133/31126265-aa10-4de5![Screenshot 2023-07-09 223557](https://github.com/ardygfr/ardygfr/assets/135483133/23c15d56-6c3d-41b6-a69a-56293f1a0dce)
+   
+   - User Memasukkan Kuantitas non Angka dan Kuantitas Minus
+ ![Screenshot 2023-07-09 223728](https://github.com/ardygfr/ardygfr/assets/135483133/977b0ec7-b771-4e68-a0e7-e4e3019599a0)
+   - 
+    
+4. Peminjaman Buku
 
     - Melakukan Peminjaman
     
@@ -360,7 +372,7 @@ Kembali ke [main.py](./main.py)
     
     ![Daftar Buku Setelah Peminjaman](https://user-images.githubusercontent.com/109220639/180597288-40e27e4d-d0f4-444e-87fc-2ce4ffff80c9.jpeg)
 
-4. Pengembalian Buku
+5. Pengembalian Buku
 
     - Melakukan Pengembalian 
     
@@ -374,7 +386,7 @@ Kembali ke [main.py](./main.py)
     
     ![Daftar Buku Setelah Pengembalian](https://user-images.githubusercontent.com/109220639/180597320-f2c31016-1e1f-4f3c-b352-81b746a481c9.jpeg)
 
-5. Meampilkan Hasil Pencarian Judul Buku
+6. Meampilkan Hasil Pencarian Judul Buku
 
 ![Pencarian Judul Buku](https://user-images.githubusercontent.com/109220639/180597323-2f7313e6-e67f-4772-9f4c-2a18248625b6.jpeg)
 
