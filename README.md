@@ -342,7 +342,7 @@ Kembali ke [main.py](./main.py)
 
 2. Proses Belanja
 
-    - Proses Belanja Pada Umumnya (Sebelum Tahap Koreksi)
+    - Proses Belanja Umum (Sebelum Tahap Koreksi)
     
     ![Screenshot 2023-07-09 223216](https://github.com/ardygfr/ardygfr/assets/135483133/515ca371-a734-4966-a025-6fbbc208fe7d)
     
@@ -352,41 +352,37 @@ Kembali ke [main.py](./main.py)
     
     - Pelanggan Salah Memilih Nomor Item
     
-    ![Screenshot 2023-07-09 223418](https://github.com/ardygfr/ardygfr/assets/135483133/31126265-aa10-4de5![Screenshot 2023-07-09 223557](https://github.com/ardygfr/ardygfr/assets/135483133/23c15d56-6c3d-41b6-a69a-56293f1a0dce)
+   ![Screenshot 2023-07-09 223557](https://github.com/ardygfr/ardygfr/assets/135483133/f04f43c2-1425-433d-8027-9214bda6f92a)
    
    - User Memasukkan Kuantitas non Angka dan Kuantitas Minus
- ![Screenshot 2023-07-09 223728](https://github.com/ardygfr/ardygfr/assets/135483133/977b0ec7-b771-4e68-a0e7-e4e3019599a0)
-   - 
+     ![Screenshot 2023-07-09 223728](https://github.com/ardygfr/ardygfr/assets/135483133/977b0ec7-b771-4e68-a0e7-e4e3019599a0)
     
-4. Peminjaman Buku
+3. Koreksi Pembelian
 
-    - Melakukan Peminjaman
+    - Uji Coba Anulir Kuantitas dan Penghapusan Item
     
-    ![3 Peminjaman Buku](https://user-images.githubusercontent.com/109220639/180597274-acfcaa86-c65c-4117-b098-6297c6168ee4.jpeg)
+    ![Screenshot 2023-07-09 224318](https://github.com/ardygfr/ardygfr/assets/135483133/bd2d9667-9571-4c6e-9b99-ca4c12da978e)
 
-    - Menampilkan Daftar Peminjaman
+
+5. Diskon dan Total Harga
+
+    - Pembelian di Bawah Rp 200.000 
     
-    ![6 Tampilkan Daftar Peminjaman](https://user-images.githubusercontent.com/109220639/180597280-6e9efba5-21bf-478a-a628-1074b42eb456.jpeg)
+   ![Screenshot 2023-07-09 224445](https://github.com/ardygfr/ardygfr/assets/135483133/ba671fff-2a95-468e-95fe-3b04f1ad018d)
 
-    - Menampilkan Daftar Buku Setelah Peminjaman (stok berkurang 1)
+    - Pembelian Rp 200.000 - 300.000 dengan 2 Jenis Item pada Kategori Sama
     
-    ![Daftar Buku Setelah Peminjaman](https://user-images.githubusercontent.com/109220639/180597288-40e27e4d-d0f4-444e-87fc-2ce4ffff80c9.jpeg)
+    ![Screenshot 2023-07-09 224914](https://github.com/ardygfr/ardygfr/assets/135483133/ac89cfbf-553d-4e4f-977f-211e3d74a38f)
 
-5. Pengembalian Buku
-
-    - Melakukan Pengembalian 
+    - Pembelian Rp 300.000 - 500.000 dengan 2 Jenis Item pada Kategori Berbeda
     
-    ![7 Pengembalian Buku](https://user-images.githubusercontent.com/109220639/180597304-0e910549-f768-4b80-a928-9fde3301a662.jpeg)
+    ![Screenshot 2023-07-09 225141](https://github.com/ardygfr/ardygfr/assets/135483133/5a314848-cd7f-4be5-ae23-e30f5ccaf833)
 
-    - Menampilkan Daftar Peminjaman (data peminjaman terhapus)
+    - Pembelian di Atas Rp 500.000 dengan Banyak Item pada Kategori Berbeda
     
-    ![Daftar Peminjaman Setelah Pengembalian](https://user-images.githubusercontent.com/109220639/180597312-4c24b1e7-5e36-475e-9c15-4d5a992eed73.jpeg)
+   ![Screenshot 2023-07-09 225440](https://github.com/ardygfr/ardygfr/assets/135483133/a6cbf7af-a435-43d1-9ce7-4f6ec6bbb765)
 
-    - Menampilkan Daftar Buku Setelah Pengembalian (stok terupdate)
-    
-    ![Daftar Buku Setelah Pengembalian](https://user-images.githubusercontent.com/109220639/180597320-f2c31016-1e1f-4f3c-b352-81b746a481c9.jpeg)
-
-6. Meampilkan Hasil Pencarian Judul Buku
+7. Meampilkan Hasil Pencarian Judul Buku
 
 ![Pencarian Judul Buku](https://user-images.githubusercontent.com/109220639/180597323-2f7313e6-e67f-4772-9f4c-2a18248625b6.jpeg)
 
