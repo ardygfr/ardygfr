@@ -72,6 +72,105 @@ if __name__ == "__main__":
 
 Kode di atas mendefinisikan fungsi `main()` sebagai fungsi utama yang akan dijalankan ketika file ini dieksekusi. Di dalam fungsi `main()`, pesan selamat datang dicetak, dan kemudian bagian lain dari program dijalankan. Juga terdapat pengecekan apakah file ini dieksekusi langsung dengan `__name__ == "__main__"`, yang berarti kode di dalam blok tersebut hanya akan dijalankan jika file ini dieksekusi langsung, bukan diimpor oleh file lain.
 
+### modul_account.py
+Tentu, berikut adalah penjelasan per segmen untuk modul `modul_account`:
+
+**Import Daftar Pengguna yang Ada:**
+```python
+from existing_users import existing_users
+```
+Pada bagian ini, modul `existing_users` diimpor untuk mendapatkan akses ke daftar pengguna yang sudah ada.
+
+**Deklarasi Class `User`:**
+```python
+class User:
+    def __init__(self, name, username, account_duration, email, has_account, referral_code=None):
+        self.name = name
+        self.username = username
+        self.account_duration = account_duration
+        self.email = email
+        self.has_account = has_account
+        self.referral_code = referral_code
+```
+Segmen ini mendefinisikan class `User` yang memiliki atribut sebagai berikut:
+- `name`: Nama lengkap pengguna.
+- `username`: Nama pengguna (username) pengguna.
+- `account_duration`: Durasi akun pengguna.
+- `email`: Email pengguna.
+- `has_account`: Menandakan apakah pengguna memiliki akun.
+- `referral_code`: Kode referral pengguna (opsional).
+
+**Fungsi `login()`:**
+```python
+def login():
+    username_email = input("Silahkan masukkan email atau username Anda: ")
+    while True:
+        existing_user = next(
+            (user for user in existing_users if user.username == username_email or user.email == username_email), None
+        )
+        if existing_user is not None:
+            print("Selamat datang, " + existing_user.name + "!")
+            return existing_user
+        create_account = input("Akun tidak ditemukan. Apakah Anda sudah memiliki akun Sumber Makmur? (YA/TIDAK) ")
+        if create_account.upper() != "YA":
+            print("Login gagal. Silakan ulangi proses dari awal.")
+            return None
+        username_email = input("Silahkan masukkan email atau username Anda: ")
+    return None
+```
+Fungsi `login()` digunakan untuk melakukan proses login pengguna. Pada bagian ini, langkah-langkah yang dilakukan adalah sebagai berikut:
+1. Pengguna diminta untuk memasukkan email atau username mereka.
+2. Fungsi mencari pengguna yang memiliki email atau username yang sesuai dengan yang dimasukkan oleh pengguna.
+3. Jika pengguna ditemukan, pesan selamat datang akan dicetak dengan mencantumkan nama pengguna yang sesuai. Fungsi akan mengembalikan objek pengguna yang sesuai.
+4. Jika pengguna tidak ditemukan, pengguna akan diminta apakah mereka sudah memiliki akun di Sumber Makmur.
+5. Jika pengguna tidak memiliki akun, fungsi akan mencetak pesan login gagal dan mengembalikan `None`.
+6. Jika pengguna ingin membuat akun, fungsi akan meminta pengguna untuk memasukkan email atau username mereka lagi.
+7. Fungsi akan terus meminta masukan hingga pengguna berhasil login atau memilih untuk membuat akun.
+8. Fungsi akan mengembalikan `None` jika login gagal.
+
+**Fungsi `create_account()`:**
+```python
+def create_account():
+    full_name = input("Masukkan Nama Lengkap Anda: ")
+    valid_email = False
+    while not valid_email:
+        email = input("Masukkan email Anda: ")
+        if "@" in email and "." in email:
+            valid_email = True
+        else:
+            print("Tolong masukkan email yang benar!")
+    valid_username = False
+    while not valid_username:
+        username = input("Masukkan nama akun Anda! Gunakan 6-10 karakter yang mengandung angka dan huruf: ")
+        if len(username) >= 6 and len(username) <= 10 and username.isalnum():
+            username_exists = False
+            for user in existing_users:
+                if user.username == username:
+                    username_exists = True
+                    break
+            if username_exists:
+                print("Username sudah ada! Mohon buat username lainnya!")
+            else:
+                valid_username = True
+        else:
+            print("Mohon gunakan 6-10 karakter yang mengandung angka dan huruf saja untuk username Anda!")
+    print("Akun Anda berhasil dibuat! Selamat berbelanja, " + full_name + "!")
+    new_user = User(full_name, username, None, email, True)
+    existing_users.append(new_user)
+    return new_user
+```
+Fungsi `create_account()` digunakan untuk membuat akun baru. Langkah-langkah yang dilakukan adalah sebagai berikut:
+1. Pengguna diminta untuk memasukkan nama lengkap dan email.
+2. Fungsi memvalidasi email yang dimasukkan oleh pengguna. Jika email tidak valid (tidak mengandung "@" dan "."), pesan error akan dicetak dan pengguna diminta memasukkan email kembali.
+3. Pengguna juga diminta untuk memasukkan nama pengguna (username). Fungsi akan memvalidasi nama pengguna dengan memastikan bahwa nama pengguna memiliki panjang antara 6 hingga 10 karakter dan hanya terdiri dari huruf dan angka.
+4. Fungsi akan
+
+memeriksa keberadaan nama pengguna dalam daftar `existing_users`. Jika nama pengguna sudah ada, pesan error akan dicetak dan pengguna diminta untuk memilih nama pengguna lainnya.
+5. Jika nama pengguna valid dan unik, fungsi akan mencetak pesan sukses pembuatan akun dan mengembalikan objek `User` yang baru dibuat.
+6. Objek `User` baru akan ditambahkan ke daftar `existing_users`.
+
+Dengan penjelasan tersebut, Anda dapat menyertakan penjelasan lengkap untuk modul `modul_account` dalam format Markdown pada file README.md di GitHub, yang diorganisir menjadi segmen-segmen yang sesuai.
+
 ## Deskripsi Task
 1. Module 'init_variable.py' memuat variabel-variabel yang dibutuhkan untuk membuat koneksi ke server dan database di MySQL.
 2. Module 'create_db.py' berfungsi untuk membuat koneksi ke server dan database. Dalam module ini juga terdapat function create_tables() untuk membuat tabel-tabel dalam database dan insert_tables() untuk menambahkan data contoh pada tabel-tabel jika diperlukan.
