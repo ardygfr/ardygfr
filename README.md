@@ -223,7 +223,7 @@ Setelah menghitung jumlah diskon, fungsi ini menghitung harga setelah diskon den
 
 Kembali ke [main.py](./main.py).
 
-### modul_item
+### modul_item.py
 
 1. Class `Category`
 
@@ -298,6 +298,30 @@ Bagian ini merupakan contoh penggunaan class `Category` untuk membuat objek kate
 - Objek `food_category` merupakan objek kategori dengan nama "Food". Beberapa item seperti "Mie", "Tempe", "Tahu", "Telur", dan "Oncom" ditambahkan ke dalam kategori ini dengan menggunakan method `add_item`.
 
 - Objek-objek lainnya seperti `toys_category`, `toiletries_category`, `beverages_category`, `electricals_category`, dan `clothing_category` dibuat dengan cara yang serupa, di mana masing-masing objek kategori memiliki nama kategori yang berbeda dan beberapa item yang ditambahkan ke dalamnya.
+
+Kembali ke [main.py](./main.py)
+
+### existing_users.py
+
+```python
+from modul_account import User
+
+existing_users = [
+    User("Andi Subandi", "andi12", 13, "andi12@example.com", True),
+    User("Budi Setiawan", "budi321", 7, "budi321@example.com", True),
+    User("Candra Lee", "chann66", 3, "chann66@example.com", False),
+    User("Denis Raharjo", "denz212", 2, "denz212@example.com", True),
+    User("Eka Jauhari", "ekawwa11", 5, "ekaazzz@example.com", True)
+]
+```
+
+Modul `existing_users.py` mengimpor class `User` dari modul `modul_account` dan mendefinisikan variabel `existing_users` yang berisi daftar pengguna yang sudah ada.
+
+- Setiap elemen dalam `existing_users` adalah objek `User` yang dibuat dengan memanggil constructor `User` dan menyediakan argumen yang sesuai. Setiap objek `User` mewakili satu pengguna dengan atribut-atribut seperti `name`, `username`, `account_duration`, `email`, `has_account`, dan `referral_code` (dalam contoh ini, `referral_code` tidak diberikan).
+
+- Contoh `existing_users` di atas menunjukkan lima pengguna yang sudah ada dalam sistem. Setiap pengguna memiliki atribut yang berbeda, seperti nama, username, durasi akun, email, dan status memiliki akun (`has_account`).
+
+Modul `existing_users.py` digunakan untuk menyimpan dan mengelola data pengguna yang sudah ada dalam sistem. Data ini dapat digunakan oleh modul lain dalam program untuk melakukan operasi seperti login, validasi pengguna, dan lainnya.
 
 Kembali ke [main.py](./main.py)
 
