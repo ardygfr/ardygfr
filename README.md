@@ -163,13 +163,65 @@ Fungsi `create_account()` digunakan untuk membuat akun baru. Langkah-langkah yan
 1. Pengguna diminta untuk memasukkan nama lengkap dan email.
 2. Fungsi memvalidasi email yang dimasukkan oleh pengguna. Jika email tidak valid (tidak mengandung "@" dan "."), pesan error akan dicetak dan pengguna diminta memasukkan email kembali.
 3. Pengguna juga diminta untuk memasukkan nama pengguna (username). Fungsi akan memvalidasi nama pengguna dengan memastikan bahwa nama pengguna memiliki panjang antara 6 hingga 10 karakter dan hanya terdiri dari huruf dan angka.
-4. Fungsi akan
-
-memeriksa keberadaan nama pengguna dalam daftar `existing_users`. Jika nama pengguna sudah ada, pesan error akan dicetak dan pengguna diminta untuk memilih nama pengguna lainnya.
+4. Fungsi akan memeriksa keberadaan nama pengguna dalam daftar `existing_users`. Jika nama pengguna sudah ada, pesan error akan dicetak dan pengguna diminta untuk memilih nama pengguna lainnya.
 5. Jika nama pengguna valid dan unik, fungsi akan mencetak pesan sukses pembuatan akun dan mengembalikan objek `User` yang baru dibuat.
 6. Objek `User` baru akan ditambahkan ke daftar `existing_users`.
 
-Dengan penjelasan tersebut, Anda dapat menyertakan penjelasan lengkap untuk modul `modul_account` dalam format Markdown pada file README.md di GitHub, yang diorganisir menjadi segmen-segmen yang sesuai.
+ ### modul_discount.py
+
+1. Import Modul
+
+```python
+from modul_discount import calculate_discount
+```
+
+Pada bagian ini, modul `modul_discount` diimpor ke dalam file yang sedang digunakan agar fungsi `calculate_discount` dapat digunakan.
+
+2. Fungsi `calculate_discount`
+
+```python
+def calculate_discount(total_price, cashback=0):
+    """
+    Fungsi ini digunakan untuk menghitung diskon dan harga setelah diskon dari total harga pembelian.
+
+    Parameters:
+        - total_price (float): Total harga pembelian sebelum diskon.
+        - cashback (float, optional): Jumlah cashback yang diberikan. Default: 0.
+
+    Returns:
+        - discounted_price (float): Total harga setelah diskon.
+        - discount_amount (float): Jumlah diskon yang diberikan.
+
+    """
+    if total_price > 500000:
+        discount = 0.1
+    elif total_price > 300000:
+        discount = 0.08
+    elif total_price > 200000:
+        discount = 0.05
+    else:
+        discount = 0
+
+    discount_amount = total_price * discount
+    discounted_price = total_price - discount_amount - cashback
+
+    return discounted_price, discount_amount
+```
+
+Fungsi `calculate_discount` digunakan untuk menghitung diskon dan harga setelah diskon dari total harga pembelian. Fungsi ini memiliki dua parameter: `total_price` dan `cashback`.
+
+- `total_price` adalah total harga pembelian sebelum diskon. Parameter ini bertipe data float.
+- `cashback` adalah jumlah cashback yang diberikan. Parameter ini bersifat opsional dan memiliki nilai default 0. Parameter ini juga bertipe data float.
+
+Fungsi ini mengembalikan dua nilai:
+- `discounted_price` adalah total harga setelah diskon. Nilai ini bertipe data float.
+- `discount_amount` adalah jumlah diskon yang diberikan. Nilai ini bertipe data float.
+
+Fungsi ini menggunakan beberapa kondisi untuk menentukan jumlah diskon yang diberikan. Jika `total_price` melebihi 500.000, diskon sebesar 10% diberikan. Jika `total_price` melebihi 300.000, diskon sebesar 8% diberikan. Jika `total_price` melebihi 200.000, diskon sebesar 5% diberikan. Jika `total_price` tidak memenuhi kondisi-kondisi tersebut, maka tidak ada diskon yang diberikan.
+
+Setelah menghitung jumlah diskon, fungsi ini menghitung harga setelah diskon dengan mengurangi jumlah diskon dan cashback dari total harga pembelian.
+
+Kembali ke [main.py](./main.py).
 
 ## Deskripsi Task
 1. Module 'init_variable.py' memuat variabel-variabel yang dibutuhkan untuk membuat koneksi ke server dan database di MySQL.
