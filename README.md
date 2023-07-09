@@ -330,7 +330,7 @@ Kembali ke [main.py](./main.py)
 
     - Penawaran Bergabung
 
-    ![Screenshot 2023-07-09 213744](https://github.com/ardygfr/ardygfr/assets/135483133/3c3dc482-1a00-4888-a5c4-1e2b544aef34
+    ![Screenshot 2023-07-09 213744](https://github.com/ardygfr/ardygfr/assets/135483133/3c3dc482-1a00-4888-a5c4-1e2b544aef34)
 
     - Menampilkan Ucapan Terimakasih
 
