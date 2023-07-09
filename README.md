@@ -325,12 +325,6 @@ Modul `existing_users.py` digunakan untuk menyimpan dan mengelola data pengguna 
 
 Kembali ke [main.py](./main.py)
 
-## Deskripsi Task
-1. Module 'init_variable.py' memuat variabel-variabel yang dibutuhkan untuk membuat koneksi ke server dan database di MySQL.
-2. Module 'create_db.py' berfungsi untuk membuat koneksi ke server dan database. Dalam module ini juga terdapat function create_tables() untuk membuat tabel-tabel dalam database dan insert_tables() untuk menambahkan data contoh pada tabel-tabel jika diperlukan.
-3. Module 'start.py' berfungsi untuk menjalankan program pada module 'create_db.py', yaitu membuat koneksi ke server dan database, serta membuat tabel dan menambahkan data contohnya jika diperlukan.
-4. Module 'main.py' berisi daftar menu LMS sederhana.
-
 ## Hasil Test Case
 1. Pendaftaran Anggota Baru
 
