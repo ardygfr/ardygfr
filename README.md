@@ -223,6 +223,84 @@ Setelah menghitung jumlah diskon, fungsi ini menghitung harga setelah diskon den
 
 Kembali ke [main.py](./main.py).
 
+### modul_item
+
+1. Class `Category`
+
+```python
+class Category:
+    def __init__(self, name):
+        self.name = name
+        self.items = []
+
+    def add_item(self, name, price):
+        item = (name, price)
+        self.items.append(item)
+
+    def get_items(self):
+        return self.items
+
+    def get_harga_item(self, nama_item):
+        return daftar_harga.get(nama_item)
+```
+
+Class `Category` merupakan blueprint untuk membuat kategori produk. Setiap objek dari class ini akan memiliki atribut `name` (nama kategori) dan `items` (daftar item dalam kategori tersebut).
+
+- Method `__init__(self, name)` adalah constructor yang digunakan untuk menginisialisasi objek kategori. Parameter `name` digunakan untuk menyimpan nama kategori, sedangkan atribut `items` diinisialisasi sebagai sebuah list kosong.
+
+- Method `add_item(self, name, price)` digunakan untuk menambahkan item ke dalam kategori. Method ini menerima dua parameter, `name` (nama item) dan `price` (harga item). Item yang ditambahkan akan disimpan dalam format tuple `(name, price)` dan dimasukkan ke dalam atribut `items` kategori.
+
+- Method `get_items(self)` digunakan untuk mengambil daftar item yang ada dalam kategori. Method ini mengembalikan nilai dari atribut `items`.
+
+- Method `get_harga_item(self, nama_item)` digunakan untuk mengambil harga suatu item berdasarkan namanya. Method ini menerima parameter `nama_item` yang merupakan nama item yang ingin dicari harganya. Method ini menggunakan variabel `daftar_harga` (yang tidak diberikan dalam kode yang diberikan) untuk mendapatkan harga item berdasarkan namanya.
+
+2. Objek Kategori
+
+```python
+food_category = Category("Food")
+food_category.add_item("Mie", 5000)
+food_category.add_item("Tempe", 3000)
+food_category.add_item("Tahu", 2000)
+food_category.add_item("Telur", 2500)
+food_category.add_item("Oncom", 3000)
+
+toys_category = Category("Toys")
+toys_category.add_item("Mobil", 100000)
+toys_category.add_item("Motor", 50000)
+toys_category.add_item("Pesawat", 150000)
+
+toiletries_category = Category("Toileteries")
+toiletries_category.add_item("Pasta Gigi", 15000)
+toiletries_category.add_item("Sabun", 4000)
+toiletries_category.add_item("Shampoo", 10000)
+toiletries_category.add_item("Pelembab", 8000)
+
+beverages_category = Category("Beverages")
+beverages_category.add_item("Air Mineral", 3000)
+beverages_category.add_item("Jus", 5000)
+beverages_category.add_item("Kopi", 7000)
+beverages_category.add_item("Teh", 4000)
+
+electricals_category = Category("Electricals")
+electricals_category.add_item("Charger", 50000)
+electricals_category.add_item("Bohlam", 10000)
+electricals_category.add_item("Kipas Angin", 100000)
+
+clothing_category = Category("Clothing")
+clothing_category.add_item("Kaos", 30000)
+clothing_category.add_item("Jeans", 150000)
+clothing_category.add_item("Mukena", 200000)
+clothing_category.add_item("Sepatu", 100000)
+```
+
+Bagian ini merupakan contoh penggunaan class `Category` untuk membuat objek kategori dan menambahkan item ke dalamnya.
+
+- Objek `food_category` merupakan objek kategori dengan nama "Food". Beberapa item seperti "Mie", "Tempe", "Tahu", "Telur", dan "Oncom" ditambahkan ke dalam kategori ini dengan menggunakan method `add_item`.
+
+- Objek-objek lainnya seperti `toys_category`, `toiletries_category`, `beverages_category`, `electricals_category`, dan `clothing_category` dibuat dengan cara yang serupa, di mana masing-masing objek kategori memiliki nama kategori yang berbeda dan beberapa item yang ditambahkan ke dalamnya.
+
+Kembali ke [main.py](./main.py)
+
 ## Deskripsi Task
 1. Module 'init_variable.py' memuat variabel-variabel yang dibutuhkan untuk membuat koneksi ke server dan database di MySQL.
 2. Module 'create_db.py' berfungsi untuk membuat koneksi ke server dan database. Dalam module ini juga terdapat function create_tables() untuk membuat tabel-tabel dalam database dan insert_tables() untuk menambahkan data contoh pada tabel-tabel jika diperlukan.
