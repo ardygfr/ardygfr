@@ -36,7 +36,6 @@ Self Cashier Python adalah program simulasi toko online yang memungkinkan penggu
 2. modul_account.py: Modul ini berisi fungsi-fungsi terkait akun pengguna seperti login() dan create_account(). Di dalamnya, terdapat kelas User yang digunakan untuk merepresentasikan pengguna.
 3. modul_discount.py: Modul ini berisi fungsi calculate_discount() yang digunakan untuk menghitung diskon berdasarkan total harga belanja.
 4. modul_item.py: Modul ini berisi definisi kelas Category yang merepresentasikan kategori produk. Modul ini juga menyediakan beberapa kategori produk yang dapat dipilih.
-5. existing_users.py: Modul ini berisi daftar pengguna yang sudah terdaftar sebelumnya. Setiap pengguna direpresentasikan oleh objek User
 
 ## Penjelasan Keteknisan
 Program Self Automated Cashier Toko Sumber Makmur menggunakan beberapa modul sekaligus seperti yang dijelaskan pada penjelasan sebelumnya. Maka dari itu kita akan merunutkan penjelasan keteknisan pada project ini.
@@ -54,7 +53,6 @@ from modul_item import (
     electricals_category,
     clothing_category
 )
-from existing_users import existing_users
 ```
 
 Kode di atas mengimpor fungsi `login` dan `create_account` dari modul `modul_account`, fungsi `calculate_discount` dari modul `modul_discount`, serta kelas `Category` dan kategori-kategori item dari modul `modul_item`. Selain itu, juga mengimpor variabel `existing_users` dari modul `existing_users`.
@@ -77,9 +75,14 @@ Tentu, berikut adalah penjelasan per segmen untuk modul `modul_account`:
 
 **Import Daftar Pengguna yang Ada:**
 ```python
-from existing_users import existing_users
+existing_users = [
+    User("Andi Subandi", "andi12", 13, "andi12@example.com", True),
+    User("Budi Setiawan", "budi321", 7, "budi321@example.com", True),
+    User("Candra Lee", "chann66", 3, "chann66@example.com", False),
+    User("Denis Raharjo", "denz212", 2, "denz212@example.com", True),
+    User("Eka Jauhari", "ekawwa11", 5, "ekaazzz@example.com", True)
 ```
-Pada bagian ini, modul `existing_users` diimpor untuk mendapatkan akses ke daftar pengguna yang sudah ada.
+Mendefinisikan variabel `existing_users` yang berisi daftar pengguna yang sudah ada.
 
 **Deklarasi Class `User`:**
 ```python
@@ -300,28 +303,6 @@ Bagian ini merupakan contoh penggunaan class `Category` untuk membuat objek kate
 - Objek-objek lainnya seperti `toys_category`, `toiletries_category`, `beverages_category`, `electricals_category`, dan `clothing_category` dibuat dengan cara yang serupa, di mana masing-masing objek kategori memiliki nama kategori yang berbeda dan beberapa item yang ditambahkan ke dalamnya.
 
 Kembali ke [main.py](./main.py)
-
-### existing_users.py
-
-```python
-from modul_account import User
-
-existing_users = [
-    User("Andi Subandi", "andi12", 13, "andi12@example.com", True),
-    User("Budi Setiawan", "budi321", 7, "budi321@example.com", True),
-    User("Candra Lee", "chann66", 3, "chann66@example.com", False),
-    User("Denis Raharjo", "denz212", 2, "denz212@example.com", True),
-    User("Eka Jauhari", "ekawwa11", 5, "ekaazzz@example.com", True)
-]
-```
-
-Modul `existing_users.py` mengimpor class `User` dari modul `modul_account` dan mendefinisikan variabel `existing_users` yang berisi daftar pengguna yang sudah ada.
-
-- Setiap elemen dalam `existing_users` adalah objek `User` yang dibuat dengan memanggil constructor `User` dan menyediakan argumen yang sesuai. Setiap objek `User` mewakili satu pengguna dengan atribut-atribut seperti `name`, `username`, `account_duration`, `email`, `has_account`, dan `referral_code` (dalam contoh ini, `referral_code` tidak diberikan).
-
-- Contoh `existing_users` di atas menunjukkan lima pengguna yang sudah ada dalam sistem. Setiap pengguna memiliki atribut yang berbeda, seperti nama, username, durasi akun, email, dan status memiliki akun (`has_account`).
-
-Modul `existing_users.py` digunakan untuk menyimpan dan mengelola data pengguna yang sudah ada dalam sistem. Data ini dapat digunakan oleh modul lain dalam program untuk melakukan operasi seperti login, validasi pengguna, dan lainnya.
 
 Kembali ke [main.py](./main.py)
 
