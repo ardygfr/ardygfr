@@ -326,13 +326,13 @@ Modul `existing_users.py` digunakan untuk menyimpan dan mengelola data pengguna 
 Kembali ke [main.py](./main.py)
 
 ## Hasil Test Case
-1. Pendaftaran Anggota Baru
+1. Non Member Tidak Ingin Daftar Account
 
-    - Penambahan Data Anggota Baru
+    - Penawaran Bergabung
 
-    ![1 Pendaftaran Anggota Baru](https://user-images.githubusercontent.com/109220639/180597034-aa853286-f291-4ca3-9633-ca7678568647.jpg)
+    ![Screenshot 2023-07-09 213744](https://github.com/ardygfr/ardygfr/assets/135483133/3c3dc482-1a00-4888-a5c4-1e2b544aef34
 
-    - Menampilkan Daftar Anggota Setelah Pendaftaran
+    - Menampilkan Ucapan Terimakasih
 
     ![4 Tampilkan Daftar Anggota](https://user-images.githubusercontent.com/109220639/180597039-0df64db9-625c-44b8-8da7-661a3f932c59.jpg)
 
